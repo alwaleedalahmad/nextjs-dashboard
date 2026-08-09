@@ -7,6 +7,7 @@ import {
   fetchLatestInvoices,
   fetchCardData,
 } from "../lib/data";
+export const dynamic = "force-dynamic";
 
 export default async function Page() {
   const revenue = await fetchRevenue();
