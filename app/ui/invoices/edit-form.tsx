@@ -14,7 +14,7 @@ import Link from "next/link";
 import { Button } from "@/app/ui/button";
 import {
   updateInvoice,
-  State,
+  StateInvoice,
 } from "@/app/lib/action";
 import { useActionState } from "react";
 
@@ -25,7 +25,7 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
-  const initialState: State = {
+  const initialState: StateInvoice = {
     message: "",
     errors: {},
   };
